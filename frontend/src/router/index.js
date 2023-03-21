@@ -20,6 +20,15 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../ViewsFront/HomePage.vue"),
   },
+
+  {
+    // path: "*",
+    path: "/adagest/admin",
+    name: "AdminHomePage",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../ViewsBack/HomePage.vue"),
+  },
+
 ];
 
 const router = createRouter({

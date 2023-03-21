@@ -1,9 +1,10 @@
 
 <template>
-  <div>
-   
+  <!-- <> -->
+   <div>
     <NavBar/>
     <HeroContainer/>
+    <AboutSection/>
     <h1>homepage</h1>
  
   </div>
@@ -16,12 +17,14 @@
 <script>
 import NavBar from '../components/NavBar.vue'
 import HeroContainer from '../components/HeroContainer.vue'
+import AboutSection from '../components/AboutContainer.vue'
 export default {
   name: 'App',
   components: {
 
     NavBar,
-    HeroContainer
+    HeroContainer,
+    AboutSection
 
   },
 

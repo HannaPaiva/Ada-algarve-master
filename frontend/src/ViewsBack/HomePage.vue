@@ -1,19 +1,37 @@
-<script setup>
-import HelloWorld from '../components/HelloWorld.vue'
-</script>
 
 <template>
   <div>
-    <h1>Teste</h1>
-    <HelloWorld msg="Vite + Vue" />
-
-    <div>
-    <router-view/>
+   
+    <NavBar/>
+    <HeroContainer/>
+    <h1>homepage</h1>
+ 
   </div>
-  </div>
-
 </template>
 
-<style scoped>
+<style scoped></style>
 
-</style>
+
+
+<script>
+import NavBar from '../components/NavBar.vue'
+import HeroContainer from '../components/HeroContainer.vue'
+export default {
+  name: 'App',
+  components: {
+
+    NavBar,
+    HeroContainer
+
+  },
+
+  data() {
+    return {
+      load: false
+    }
+  }
+}
+</script> 
+
+<style></style>
+  

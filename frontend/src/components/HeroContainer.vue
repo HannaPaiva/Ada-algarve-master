@@ -1,6 +1,60 @@
+
+
+
 <template>
   <div>
-   
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div id="wrapper">
+            <img src="../assets/images/hero-image-1.jpg" class="d-block w-100" alt="...">
+            <div class="overlay"></div>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5> slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <div id="wrapper">
+            <img src="../assets/images/hero-image-2.jpg" class="d-block w-100" alt="...">
+            <div class="overlay"></div>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <div id="wrapper">
+            <img src="../assets/images/hero-image-3.jpg" class="d-block w-100" alt="...">
+            <div class="overlay"></div>
+          </div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
   </div>
 </template>
@@ -29,50 +83,38 @@ export default {
   }
 };
 </script>
-<style >
+<style scoped>
+#wrapper {
+  position: relative;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  z-index: 1;
+
+}
+
 img {
   width: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-size:cover;
+  background-size: cover;
 }
 
+.carousel-item>div {
 
-.hero-slider .carousel-control-prev,
-.hero-slider .carousel-control-nex {
-  background-color: rgba(255, 255, 255, 0.3) !important;
-  width: 60px !important;
-  height: 60px !important;
-  display: block;
-  display: grid;
-  place-items: center;
-  color: #fff !important;
-  border-radius: 100px;
-  line-height: 0;
-  border-radius: 100px !important;
-  position: absolute;
-  top: 50%;
-  font-weight: 600 !important;
-  font-size: 12px !important;
-  transition: all 0.4s ease;
-  margin-top: -30px !important;
-}
 
-.owl-prev {
-  left: 0;
-}
-
-.owl-next {
-  right: 0;
-}
-
-.hero-slider .owl-prev:hover,
-.hero-slider .owl-next:hover {
-  background-color: var(--brand) !important;
-}
-
-.owl-dot.active span {
-  background-color: var(--brand) !important;
+  height: 50%;
+  display: flex;
+  font-weight: 600;
+  font-size: 45px;
+  flex-direction: column;
+  justify-content: center;
 }
 
 
@@ -83,5 +125,19 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+
+.slide1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/hero-image-1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../assets/images/hero-image-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 </style>
