@@ -8,7 +8,7 @@
             <div class="row">
               <div class="col-12 mt-4">
                 <div class="info-box">
-                  <img src="img/icon4.png" alt="">
+                  <img src="" alt="">
                   <div class="ms-4">
                     <h5>Sobre a ADA - Academia de Dança do Algarve</h5>
                     <p>(Preencher) </p>
@@ -19,7 +19,7 @@
             </div>
           </div>
           <div class="col-lg-5">
-            <img src="img/about.png" alt="">
+            <img src="" alt="">
           </div>
         </div>
       </div>

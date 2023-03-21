@@ -3,36 +3,35 @@ import { createRouter, createWebHistory } from "vue-router";
 const routes = [
   {
     path: "/adagest/",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../ViewsFront/HomePage.vue"),
+    component: () => import("../ViewsFront/HomePage.vue"),
   },
 
   {
     path: "/adagest/subs",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../ViewsFront/Subscriptions.vue"),
+    component: () => import("../ViewsFront/Subscriptions.vue"),
   },
 
   {
-    // path: "*",
     path: "/:catchAll(.*)",
     name: "NotFound",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../ViewsFront/HomePage.vue"),
+    component: () => import("../ViewsFront/HomePage.vue"),
   },
 
   {
-    // path: "*",
     path: "/adagest/admin",
     name: "AdminHomePage",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../ViewsBack/HomePage.vue"),
+    component: () => import("../ViewsBack/HomePageAdmin.vue"),
   },
-
+  {
+    // path: "*",
+    path: "/adagest/admin/partners",
+    name: "AdminManagePartners",
+    component: () => import("../ViewsBack/ManagePartners.vue"),
+  },
 ];
 
 const router = createRouter({
-  base: '/adagest',
+  base: "/adagest",
   history: createWebHistory(),
   routes,
 });

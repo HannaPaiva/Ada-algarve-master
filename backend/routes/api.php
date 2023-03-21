@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PartnerController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -20,5 +20,9 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 // Route::get('/', function () {
-//     return view('welcome');
+//     echo("chegou no /");
+
 // });
+
+
+Route::get('/partner', [PartnerController::class, 'index']);

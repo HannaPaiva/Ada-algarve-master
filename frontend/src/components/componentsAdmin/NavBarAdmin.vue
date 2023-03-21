@@ -1,7 +1,7 @@
 <template>
   <div>
-  
-    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">Academia de Dança do Algarve</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -20,7 +20,15 @@
               <router-link to="/adagest/subs" class="nav-link"> Galeria </router-link>
             </li>
           </ul>
-          <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-brand ms-lg-3">Inscreva-se</a>
+      
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-brand ms-lg-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch 
+          </button>
+
+          <!-- Modal -->
+         
+
         </div>
       </div>
     </nav>

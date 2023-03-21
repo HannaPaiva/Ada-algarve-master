@@ -2,9 +2,9 @@
 <template>
   <div>
    
-    <NavBar/>
-    <HeroContainer/>
-    <h1>homepage</h1>
+    <NavBarAdmin/>
+
+ 
  
   </div>
 </template>
@@ -14,13 +14,13 @@
 
 
 <script>
-import NavBar from '../components/NavBar.vue'
+import NavBarAdmin from '../components/componentsAdmin/NavBarAdmin.vue'
 import HeroContainer from '../components/HeroContainer.vue'
 export default {
   name: 'App',
   components: {
 
-    NavBar,
+    NavBarAdmin,
     HeroContainer
 
   },
