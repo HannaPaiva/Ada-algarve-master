@@ -12,8 +12,7 @@ const routes = [
   },
 
   {
-    path: "/:catchAll(.*)",
-    name: "NotFound",
+    path: "/:catchAll(.*)", // Unrecognized path automatically matches 404
     component: () => import("../ViewsFront/HomePage.vue"),
   },
 
