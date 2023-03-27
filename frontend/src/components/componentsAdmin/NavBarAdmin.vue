@@ -9,17 +9,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <router-link to="/adagest/" class="nav-link"> Inicial </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/adagest/subs" class="nav-link"> Contactos </router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/adagest/subs" class="nav-link"> Galeria </router-link>
-            </li>
-          </ul>
+     
       
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-brand ms-lg-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -27,8 +17,7 @@
           </button>
 
           <!-- Modal -->
-         
-
+  
         </div>
       </div>
     </nav>

@@ -19,8 +19,8 @@
             <div class="overlay"></div>
           </div>
           <div class="carousel-caption d-none d-md-block">
-            <h5> slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <h5> Conheça as nossas equipas!</h5>
+            <p>VEJA UM DE NOSSOS ESPETÁCULOS</p>
           </div>
         </div>
 
@@ -30,8 +30,8 @@
             <div class="overlay"></div>
           </div>
           <div class="carousel-caption d-none d-md-block">
-            <h5>slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <!-- <h5>slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p> -->
           </div>
         </div>
 
@@ -41,8 +41,8 @@
             <div class="overlay"></div>
           </div>
           <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
+            <!-- <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p> -->
           </div>
         </div>
       </div>

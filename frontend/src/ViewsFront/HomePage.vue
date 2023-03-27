@@ -5,8 +5,10 @@
     <NavBar/>
     <HeroContainer/>
     <AboutSection/>
-    <h1>homepage</h1>
- 
+    <ServicesSection/>
+    <TeamSection/> 
+    <FooterContainer/>
+
   </div>
 </template>
 
@@ -18,13 +20,20 @@
 import NavBar from '../components/NavBar.vue'
 import HeroContainer from '../components/HeroContainer.vue'
 import AboutSection from '../components/AboutContainer.vue'
+import ServicesSection from '../components/ServicesSection.vue'
+import TeamSection from '../components/TeamSection.vue'
+import FooterContainer from '../components/FooterContainer.vue'
 export default {
   name: 'App',
   components: {
 
     NavBar,
     HeroContainer,
-    AboutSection
+    AboutSection,
+    ServicesSection,
+    TeamSection,
+    FooterContainer,
+
 
   },
 

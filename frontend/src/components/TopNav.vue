@@ -2,7 +2,7 @@
   <div>
     <div class="top-nav" id="home">
         <div class="container">
-            <div class="row justify-content-between">
+            <div class="row justify-content-between ">
                 <div class="col-auto">
                     <p> <i class='bx bxs-envelope'></i> ada.algarve@gmail.com</p>
                     <p> <i class='bx bxs-phone-call'></i>+351 915 624 032</p>
